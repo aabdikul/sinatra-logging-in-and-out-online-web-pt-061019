@@ -23,10 +23,10 @@ require 'pry'
   end
 
   get '/account' do
-  
+
     erb :account
   end
-  end
+  
 
   get '/logout' do
     session.clear
