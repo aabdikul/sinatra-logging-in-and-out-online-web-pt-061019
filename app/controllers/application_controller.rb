@@ -25,8 +25,6 @@ require 'pry'
   get '/account' do
     if Helper.is_logged_in?(session) == true
     erb :account
-  else
-    erb :error
   end
   end
 
