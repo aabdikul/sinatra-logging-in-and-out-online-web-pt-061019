@@ -9,9 +9,12 @@
     <h1>
     <%if Helpers.is_logged_in?(session) == true%>
     Welcome <%=Helpers.current_user(session).username%>
-    <%=Helpers.current_user(session).balance%>
-    <a href='/logout'>Log Out</a>
   </h1>
+  <h3>
+    <%=Helpers.current_user(session).balance%>
+  </h3>
+    <a href='/logout'>Log Out</a>
+
     <%else%>
   <h1>  <a href='/logout'>Log Out</a>
   </h1>
