@@ -23,10 +23,10 @@ require 'pry'
   end
 
   get '/account' do
-    if Helpers.is_logged_in?(session) == true
-    erb :account
-  else
+    if Helpers.is_logged_in?(session) == false
     erb :error
+    else
+    erb :account
   end
   end
 
